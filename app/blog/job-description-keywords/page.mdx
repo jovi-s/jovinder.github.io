@@ -1,0 +1,25 @@
+<Cover
+  src="https://cdn.prod.website-files.com/627c8700df0be67c4b1d533c/653a949cb3e5f9b3e7272a9b_mihYHreKxNReX3nMG97Ygb-n7dMF4BeliIjLpta6TIH_CkYm0REJVLpb1lYYPDs4wkv4n-fIVjp9ZU0VtT1AzSEMnb5tKS2L0i88OGP17OXJfZXgQ8wntIHomVapvKlvFhP1UM3qO0ta4sRpoR6FjpM.png"
+  alt="Keywords from job descriptions"
+  caption="tealhq.com"
+/>
+
+# Job Description Keywords
+
+This project aims to extract keywords from a set of LinkedIn job postings.
+
+This is done via scraping from LinkedIn jobs search URL, https://www.linkedin.com/jobs. 
+The user is encouraged to select relevant filters for a more precise search regarding 
+specific jobs. Scraping is done using Selenium and the results are saved into a 
+.xlsx file for further use. An automatic webpage should open and the program will 
+automatically click, and copy the relevant information. This is done through going 
+into 'inspect' and via finding elements by xpath, class_name, tag_name, css_selector 
+from the webpage.
+
+Regex is used on the job description column of the dataframe to clean it, a custom 
+dataset of non essential words are removed from the text and words are then lemmatized 
+using WordNetLemmatizer. A corpus is formed from the column and "english" stop words 
+are removed and finally keyword extraction is done using TF-IDF or KeyBert. The user 
+has the option to select which method to use from the command line.
+
+Code can be found [here](https://github.com/jovi-s/linkedin-job-keywords).
