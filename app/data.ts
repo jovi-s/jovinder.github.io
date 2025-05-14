@@ -14,6 +14,15 @@ type WorkExperience = {
   id: string
 }
 
+type Education = {
+  school: string
+  degree: string
+  start: string
+  end: string
+  link: string
+  id: string
+}
+
 type BlogPost = {
   title: string
   description: string
@@ -96,6 +105,25 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: '2019',
     link: 'https://www.vml.com/singapore',
     id: 'work5',
+  },
+]
+
+export const EDUCATION: Education[] = [
+  {
+    school: 'National University of Singapore',
+    degree: 'Master of Science in Mathematics',
+    start: '2020',
+    end: '2024',
+    link: 'https://www.math.nus.edu.sg/pg/msc-cwk/',
+    id: 'education1',
+  },
+  {
+    school: 'Brock University',
+    degree: 'Bachelor of Science (Honours) in Mathematics',
+    start: '2012',
+    end: '2016',
+    link: 'https://brocku.ca/mathematics-science/mathematics/mica-mathematics-integrated-with-computers-and-applications/',
+    id: 'education2',
   },
 ]
 
