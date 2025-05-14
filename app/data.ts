@@ -41,6 +41,8 @@ type Skill = {
 
 type Conference = {
   name: string
+  link: string
+  id: string
 }
 
 export const PROJECTS: Project[] = [
@@ -245,11 +247,17 @@ export const SKILLS: Skill[] = [
 export const CONFERENCES: Conference[] = [
   {
     name: 'ICLR 2025',
+    link: 'https://iclr.cc/',
+    id: 'conference1',
   },
   {
     name: 'UNFCCC COP29 2024',
+    link: 'https://unfccc.int/cop29',
+    id: 'conference2',
   },
   {
     name: 'Singapore Fintech Festival 2022',
+    link: 'https://www.visitsingapore.com/mice/en/why-singapore/success-stories/singapore-fintech-festival-2022/',
+    id: 'conference3',
   },
 ]

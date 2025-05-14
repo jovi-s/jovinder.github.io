@@ -254,13 +254,32 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-5 text-lg font-medium">Conferences Attended</h3>
-        <div className="flex flex-col space-y-2">
-          {CONFERENCES.map((conference) => (
-            <div key={conference.name} className="rounded-lg bg-zinc-100 px-3 py-2 text-sm text-zinc-600 dark:bg-zinc-900 dark:text-zinc-400">
-              {conference.name}
-            </div>
-          ))}
+        <h3 className="mb-3 text-lg font-medium">Conferences Attended</h3>
+        <div className="flex flex-col space-y-0">
+          <AnimatedBackground
+            enableHover
+            className="h-full w-full rounded-lg bg-zinc-100 border border-zinc-200 dark:border-zinc-800 dark:bg-zinc-900/80"
+            transition={{
+              type: 'spring',
+              bounce: 0,
+              duration: 0.2,
+            }}
+          >
+            {CONFERENCES.map((conference) => (
+              <Link
+                key={conference.id}
+                className="-mx-3 rounded-xl px-3 py-3"
+                href={conference.link}
+                data-id={conference.id}
+              >
+                <div className="flex flex-col">
+                  <h4 className="font-normal dark:text-zinc-100">
+                    {conference.name}
+                  </h4>
+                </div>
+              </Link>
+            ))}
+          </AnimatedBackground>
         </div>
       </motion.section>
         
