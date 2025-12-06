@@ -65,6 +65,12 @@ export const PROJECTS: Project[] = [
     link: 'https://drive.google.com/file/d/1WaB65ySWRLhENUX6VHrDHm7wCtIDw9TC/view',
     id: 'project3',
   },
+  {
+    name: 'Singapore COP29 Youth Delegation Report GPT',
+    description: 'Created a custom GPT for the Singapore COP29 Youth Delegation Report.',
+    link: 'https://chatgpt.com/g/g-6853e019e05881919948b9798f4a12c7-sg-cop29-youth-delegation-report-gpt',
+    id: 'project3.1',
+  },
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
@@ -246,6 +252,21 @@ export const SKILLS: Skill[] = [
 
 export const CONFERENCES: Conference[] = [
   {
+    name: 'AIMX Singapore 2025',
+    link: 'https://aimx.global/aimx-singapore-2025//',
+    id: 'conference6',
+  },
+  {
+    name: 'Singapore Fintech Festival 2025',
+    link: 'https://www.fintechfestival.sg/',
+    id: 'conference4',
+  },
+  {
+    name: 'Tech Law Fest 2025',
+    link: 'https://www.techlawfest.com/',
+    id: 'conference5',
+  },
+  {
     name: 'ICLR 2025',
     link: 'https://iclr.cc/',
     id: 'conference1',
@@ -254,6 +275,11 @@ export const CONFERENCES: Conference[] = [
     name: 'UNFCCC COP29 2024',
     link: 'https://unfccc.int/cop29',
     id: 'conference2',
+  },
+  {
+    name: 'Tech Law Fest 2024',
+    link: 'https://www.techlawfest.com/',
+    id: 'conference7',
   },
   {
     name: 'Singapore Fintech Festival 2022',
