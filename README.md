@@ -21,6 +21,7 @@ git clone https://github.com/ibelick/nim.git
 cd nim
 npm install
 npm run dev
+npm run build # Test build locally
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

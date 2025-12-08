@@ -45,6 +45,13 @@ type Conference = {
   id: string
 }
 
+type HennaArt = {
+  id: string
+  title: string
+  description: string
+  image: string
+}
+
 export const PROJECTS: Project[] = [
   {
     name: 'MRT Train Door Spotter Bot',
@@ -248,6 +255,21 @@ export const SKILLS: Skill[] = [
   {
     name: 'Docker',
   }
+]
+
+export const HENNA_ART: HennaArt[] = [
+  {
+    id: 'henna-1',
+    title: 'Taj Mahal Design',
+    description: 'Intricate Taj Mahal inspired henna pattern',
+    image: '/henna-taj-bhua.jpeg',
+  },
+  {
+    id: 'henna-2',
+    title: 'Ethnic Designs',
+    description: 'Traditional ethnic henna artwork',
+    image: '/henna-ethnic-taj.jpeg',
+  },
 ]
 
 export const CONFERENCES: Conference[] = [
