@@ -274,6 +274,11 @@ export const HENNA_ART: HennaArt[] = [
 
 export const CONFERENCES: Conference[] = [
   {
+    name: 'AI Engineer Singapore 2026',
+    link: 'https://www.ai.engineer/singapore',
+    id: 'conference8',
+  },
+  {
     name: 'AIMX Singapore 2025',
     link: 'https://aimx.global/aimx-singapore-2025//',
     id: 'conference6',
